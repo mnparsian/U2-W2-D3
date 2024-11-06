@@ -1,0 +1,25 @@
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: $color-text;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+  
+    &.btn-primary {
+      background-color: $color-primary;
+    }
+  
+    &.btn-secondary {
+      background-color: $color-secondary;
+    }
+  
+    &.btn-tertiary {
+      background-color: $color-tertiary;
+    }
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  

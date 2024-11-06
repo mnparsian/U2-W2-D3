@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: "Arial, sans-serif";
+}
+
+.margin-sm {
+  margin: 8px;
+}
+
+.margin-normal {
+  margin: 16px;
+}
+
+.margin-md {
+  margin: 24px;
+}
+
+.margin-lg {
+  margin: 32px;
+}
+
+.margin-xl {
+  margin: 48px;
+}
+
+.margin-xxl {
+  margin: 64px;
+}
+
+.padding-sm {
+  padding: 8px;
+}
+
+.padding-normal {
+  padding: 16px;
+}
+
+.padding-md {
+  padding: 24px;
+}
+
+.padding-lg {
+  padding: 32px;
+}
+
+.padding-xl {
+  padding: 48px;
+}
+
+.padding-xxl {
+  padding: 64px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #f4f4f4;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.btn.btn-primary {
+  background-color: #0e6cff;
+}
+.btn.btn-secondary {
+  background-color: #ff8700;
+}
+.btn.btn-tertiary {
+  background-color: #4caf50;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #640fc5;
+  color: #f4f4f4;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.navbar .nav-links a {
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navbar .nav-links a:hover {
+  color: #0e6cff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: #640fc5;
+  padding: 2rem;
+  color: #f4f4f4;
+}
+.hero .hero-content {
+  flex: 1;
+  animation: fadeInSlide 1s ease-out 0.2s both;
+}
+.hero .hero-content h1 {
+  font-size: 2.5rem;
+  color: #f4f4f4;
+}
+.hero .hero-content p {
+  margin: 1rem 0;
+}
+.hero .hero-content .buttons {
+  display: flex;
+  gap: 10px;
+}
+.hero .hero-image {
+  flex: 1;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 1px solid #0e6cff;
+}
+.hero .hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-section {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.grid-section .grid-item {
+  background-color: #640fc5;
+  padding: 20px;
+  color: #f4f4f4;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+.grid-section .grid-item:nth-child(even) {
+  background-color: #0e6cff;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+@mixin generate-spacing($property) {
+    @each $size, $value in (sm: 8px, normal: 16px, md: 24px, lg: 32px, xl: 48px, xxl: 64px) {
+      .#{$property}-#{$size} {
+        #{$property}: $value;
+      }
+    }
+  }
+  
+  @include generate-spacing(margin);
+  @include generate-spacing(padding);
+  

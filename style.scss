@@ -1,0 +1,90 @@
+// Import partials
+@import './sass/reset';
+@import './sass/colors';
+@import './sass/fonts';
+@import './sass/spacings';
+@import './sass/buttons';
+@import './sass/mixins';
+@import './sass/animations';
+
+// Navbar
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: $bg-hero;
+  color: $color-text;
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+    a {
+      color: $color-text;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: $bg-hero;
+  padding: 2rem;
+  color: $color-text;
+
+  .hero-content {
+    flex: 1;
+    @include fade-in-slide(1s, 0.2s);
+
+    h1 {
+      @include title-big;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .hero-image {
+    flex: 1;
+    @include floating(10px, 0 4px 12px rgba(0, 0, 0, 0.3), 1px solid $color-primary);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Grid Section
+.grid-section {
+  padding: 2rem;
+  background-color: $color-text;
+
+  .grid-item {
+    background-color: $bg-hero;
+    padding: 20px;
+    color: $color-text;
+    text-align: center;
+    @include floating;
+
+    &:nth-child(even) {
+      background-color: $color-primary;
+    }
+  }
+
+  @include grid(4);
+}
